@@ -9,7 +9,7 @@ namespace Visma.Loan.Domain
         {
             if (paybackSchemeType == PaybackSchemeType.Linear)
             {
-                return new LinearPaybackScheme(durationInYears, loanAmount, loanType);
+                return new LinearPaybackCalculator(durationInYears, loanAmount, loanType);
             }
 
             throw new ArgumentException(

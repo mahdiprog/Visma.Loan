@@ -1,8 +1,8 @@
 ﻿namespace Visma.Loan.Domain.Calculators;
 
-public class LinearPaybackScheme : PaybackCalculator
+public class LinearPaybackCalculator : PaybackCalculator
 {
-    public LinearPaybackScheme(int durationInYears, decimal loanAmount, LoanType loanType) : base(durationInYears, loanAmount, loanType)
+    public LinearPaybackCalculator(int durationInYears, decimal loanAmount, LoanType loanType) : base(durationInYears, loanAmount, loanType)
     {
     }
     public override decimal CalculateMonthlyPayback()
